@@ -1,12 +1,15 @@
 .trust {
   text-align: center;
-  padding: 80px 5vw;
+  padding: 80px 0;
+  background: var(--white);
+  border-radius: 0;
 }
 
 .trust h2 {
   font-size: clamp(1.8rem, 3.5vw, 2.4rem);
   color: var(--black);
   margin-bottom: 32px;
+  font-weight: 700;
 }
 
 .trust-logos {
@@ -19,13 +22,13 @@
 .trust-logo {
   background: var(--white);
   color: var(--primary-blue);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.1rem;
-  border-radius: 16px;
+  border-radius: 12px;
   padding: 18px 32px;
   min-width: 120px;
   border: 1px solid var(--light-gray);
-  box-shadow: 0 14px 24px var(--accent-light-blue);
+  box-shadow: none;
 }
 
 @media (max-width: 600px) {

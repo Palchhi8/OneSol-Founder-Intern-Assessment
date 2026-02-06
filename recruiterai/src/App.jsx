@@ -6,6 +6,7 @@ import Platforms from './components/Platforms'
 import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
 import FinalCTA from './components/FinalCTA'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Testimonials />
       <FAQ />
       <FinalCTA />
+      <Footer />
     </div>
   )
 }

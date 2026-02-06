@@ -37,7 +37,7 @@ function FAQ() {
   }
 
   return (
-    <section className="faq">
+    <section className="faq" id="faq">
       <div className="faq-header">
         <p className="eyebrow">FAQ</p>
         <h2>Questions Teams Ask Before Switching</h2>

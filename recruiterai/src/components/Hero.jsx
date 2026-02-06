@@ -23,27 +23,33 @@ const conversationCards = [
 function Hero() {
 
   return (
+    <>
+    {/* Navigation Bar */}
+    <nav className="navbar">
+      <div className="navbar-brand">
+        <span className="logo-icon">🔷</span>
+        <span className="logo-text">RecruiterAI</span>
+      </div>
+      <div className="navbar-nav">
+        <a href="#how-it-works">Product</a>
+        <a href="#metrics">Metrics</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div className="navbar-actions">
+        <button className="login-btn">Log In</button>
+        <button className="demo-btn">Book a Demo</button>
+      </div>
+    </nav>
+    
     <section className="hero" id="hero">
-      {/* Elegant SVG background shapes */}
-      <svg className="hero-bg-svg" viewBox="0 0 900 900" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="450" cy="450" r="400" fill="url(#paint0_radial)" />
-        <defs>
-          <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientTransform="translate(450 450) scale(400)" gradientUnits="userSpaceOnUse">
-            <stop stopColor="#A5D8FF" />
-            <stop offset="1" stopColor="#3B82F6" stopOpacity="0.2" />
-          </radialGradient>
-        </defs>
-      </svg>
-      <svg className="hero-bg-svg2" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <ellipse cx="300" cy="300" rx="260" ry="220" fill="#B197FC" />
-      </svg>
       <div className="hero-content">
-        <p className="eyebrow">RecruiterAI</p>
+        <p className="eyebrow">RECRUITERAI CORE</p>
         <h1>Every Hire, Faster and Better</h1>
         <p className="hero-subtext">
-          Manual hiring stacks slow teams down. RecruiterAI automates sourcing, screening,
-          scheduling, and candidate nurturing so your team closes top talent before the
-          competition even responds.
+          Manual hiring stacks slow teams down. RecruiterAI automates
+          sourcing, screening, and scheduling so your team closes top talent
+          before the competition even responds.
         </p>
         <div className="hero-buttons">
           <button
@@ -72,6 +78,7 @@ function Hero() {
         ))}
       </div>
     </section>
+    </>
   );
 }
 

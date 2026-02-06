@@ -7,21 +7,22 @@ const metrics = [
   { value: '25x', label: 'Interview Capacity' },
   { value: '95%', label: 'Application Completion' },
   { value: '89%', label: 'Better Applications' },
-  { value: '80%', label: 'Lower Cost' },
+  { value: '80%', label: 'Reduced-Cost / Lower Cost ' },
   { value: '50%', label: 'Fewer Bad Hires' },
 ];
 
 function Metrics() {
   return (
-    <section className="metrics-section">
+    <section className="metrics-section" id="metrics">
       <p className="eyebrow">Impact & Results</p>
       <h2 className="metrics-title">Turn hiring into a predictable growth lever</h2>
       <p className="metrics-subtext">
         RecruiterAI automates the slowest workflows so every candidate gets a fast, consistent experience.
       </p>
       <div className="metrics-grid">
-        {metrics.map((m) => (
+        {metrics.map((m, i) => (
           <div className="metric-card" key={m.label}>
+            <span className="metric-bar" />
             <div className="metric-value">{m.value}</div>
             <div className="metric-label">{m.label}</div>
           </div>
