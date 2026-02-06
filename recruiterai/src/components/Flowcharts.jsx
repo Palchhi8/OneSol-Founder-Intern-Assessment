@@ -21,7 +21,7 @@ function Flowcharts() {
             <div className="arrow">&#8595;</div>
             <div className="node process">Send Screening Questions</div>
             <div className="arrow">&#8595;</div>
-            <div className="node diamond">Qualification Score &gt; 75%?</div>
+            <div className="node diamond"><span>Qualification Score &gt; 75%?</span></div>
             <div className="branch">
               <div className="branch-path yes-path">
                 <span className="branch-label yes">YES</span>
@@ -52,7 +52,7 @@ function Flowcharts() {
             <div className="arrow">&#8595;</div>
             <div className="node process">AI Scoring</div>
             <div className="arrow">&#8595;</div>
-            <div className="node diamond">Score &gt; 80%?</div>
+            <div className="node diamond"><span>Score &gt; 80%?</span></div>
             <div className="branch">
               <div className="branch-path yes-path">
                 <span className="branch-label yes">YES</span>
@@ -61,7 +61,7 @@ function Flowcharts() {
                 <div className="arrow">&#8595;</div>
                 <div className="node process">Hiring Manager Review</div>
                 <div className="arrow">&#8595;</div>
-                <div className="node diamond small">Hire?</div>
+                <div className="node diamond small"><span>Hire?</span></div>
                 <div className="branch">
                   <div className="branch-path yes-path">
                     <span className="branch-label yes">YES</span>
@@ -95,14 +95,14 @@ function Flowcharts() {
             <div className="arrow">&#8595;</div>
             <div className="node process">Wait 3 Months</div>
             <div className="arrow">&#8595;</div>
-            <div className="node diamond">New role opens?</div>
+            <div className="node diamond"><span>New role opens?</span></div>
             <div className="branch">
               <div className="branch-path yes-path">
                 <span className="branch-label yes">YES</span>
                 <div className="arrow">&#8595;</div>
                 <div className="node process">Personalized Email</div>
                 <div className="arrow">&#8595;</div>
-                <div className="node diamond small">Interested in applying?</div>
+                <div className="node diamond small"><span>Interested in applying?</span></div>
                 <div className="branch">
                   <div className="branch-path yes-path">
                     <span className="branch-label yes">YES</span>

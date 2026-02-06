@@ -2,19 +2,23 @@ import '../styles/Hero.css'
 
 const conversationCards = [
   {
-    title: 'Sarah K., Founder at TechStart',
+    name: 'Sarah K.',
+    role: 'Founder at TechStart',
     message: "Candidates wait 3 weeks for replies while I'm juggling everything. We're losing great talent to competitors.",
   },
   {
-    title: 'Rahul M., Hiring Manager at GrowthCo',
+    name: 'Rahul M.',
+    role: 'Hiring Manager at GrowthCo',
     message: 'Posted on LinkedIn. Got 200 applications. Skimmed through 20. Hired on gut feeling. They quit in 2 months.',
   },
   {
-    title: 'Priya S., CEO at InnovateLabs',
+    name: 'Priya S.',
+    role: 'CEO at InnovateLabs',
     message: "I'm the CEO, product lead, AND now doing HR? There's zero time to read 200 resumes properly.",
   },
   {
-    title: 'Amit T., Head of HR at ScaleUp',
+    name: 'Amit T.',
+    role: 'Head of HR at ScaleUp',
     message: 'Our best candidate accepted another offer while we were still scheduling interviews. This keeps happening.',
   },
 ]
@@ -47,9 +51,10 @@ function Hero() {
         <p className="eyebrow">RECRUITERAI CORE</p>
         <h1>Every Hire, Faster and Better</h1>
         <p className="hero-subtext">
-          Manual hiring stacks slow teams down. RecruiterAI automates
-          sourcing, screening, and scheduling so your team closes top talent
-          before the competition even responds.
+          Manual hiring processes lead to lost candidates and wasted time.
+          While you’re reviewing resumes, top talent is accepting offers elsewhere.
+          RecruiterAI automates sourcing, screening, and scheduling so you hire
+          faster—without sacrificing quality.
         </p>
         <div className="hero-buttons">
           <button
@@ -71,8 +76,11 @@ function Hero() {
       </div>
       <div className="hero-visual">
         {conversationCards.map((card, index) => (
-          <div key={card.title} className={`hero-card card-${index + 1}`}>
-            <span>{card.title}</span>
+          <div key={card.name} className={`hero-card card-${index + 1}`}>
+            <div className="card-header">
+              <span className="card-name">{card.name}</span>
+              <span className="card-role">{card.role}</span>
+            </div>
             <p>{card.message}</p>
           </div>
         ))}

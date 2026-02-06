@@ -47,9 +47,13 @@ function FAQ() {
           <article key={faq.question} className={`faq-item ${openIndex === index ? 'open' : ''}`}>
             <button type="button" onClick={() => handleToggle(index)} aria-expanded={openIndex === index}>
               <span>{faq.question}</span>
-              <span className="faq-icon">{openIndex === index ? '−' : '+'}</span>
+              <span className="faq-icon">+</span>
             </button>
-            {openIndex === index && <p>{faq.answer}</p>}
+            <div className="faq-answer">
+              <div className="faq-answer-inner">
+                {faq.answer}
+              </div>
+            </div>
           </article>
         ))}
       </div>

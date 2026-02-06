@@ -3,7 +3,7 @@ import '../styles/Testimonials.css'
 const testimonials = [
   {
     quote:
-      'RecruiterAI collapsed our screening time from days to hours. The team now focuses on relationship building instead of inbox triage.',
+      'RecruiterAI reduced our screening time from days to hours. The team now focuses on relationship building instead of inbox triage.',
     name: 'Priya Kapoor',
     title: 'Head of Talent',
     company: 'Northwind Commerce',
