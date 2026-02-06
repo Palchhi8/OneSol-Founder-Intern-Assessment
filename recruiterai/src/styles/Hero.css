@@ -122,84 +122,135 @@
 }
 
 .hero-visual {
-  flex: 1 1 320px;
-  min-height: 360px;
+  flex: 1 1 420px;
+  min-height: 540px;
   position: relative;
   z-index: 1;
+  /* Ensure container is large enough on desktop */
 }
 
 .hero-card {
   position: absolute;
-  width: 230px;
-  padding: 18px;
+  width: 260px;
+  padding: 24px;
   background: var(--white);
   border-radius: 18px;
-  box-shadow: none;
-  border: 1px solid var(--light-gray);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08); 
+  border: 1px solid rgba(0,0,0,0.05);
+  z-index: 2;
+  transition: all 0.3s ease;
 }
 
 .hero-card span {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
   color: var(--primary-blue);
-  font-weight: 600;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 8px;
 }
 
 .hero-card p {
-  margin-top: 12px;
+  margin-top: 0;
   color: var(--black);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  font-weight: 500;
 }
 
+/* Desktop Positioning (≥1024px) */
+/* Distributed to prevent overlap */
 .card-1 {
   top: 0;
-  left: 5%;
+  left: 0;
+  z-index: 3;
 }
 
 .card-2 {
-  top: 30%;
-  right: 5%;
+  top: 10%;
+  right: 0;
+  z-index: 2;
 }
 
 .card-3 {
   bottom: 15%;
-  left: 0;
+  left: 20px;
+  z-index: 4;
 }
 
 .card-4 {
   bottom: 0;
-  right: 15%;
+  right: 20px;
+  z-index: 5;
 }
 
-@media (max-width: 768px) {
+/* Tablet (768px – 1023px) */
+@media (max-width: 1023px) {
+  .hero {
+    padding: 60px 40px;
+    gap: 40px;
+  }
+
+  .hero-visual {
+    flex: 1 1 100%;
+    width: 100%;
+    min-height: 500px; /* ample space */
+    margin-top: 20px;
+  }
+
+  .hero-card {
+    width: 45%; 
+    min-width: 260px;
+  }
+
+  /* Push cards outward/gap adjustment */
+  .card-1 { top: 0; left: 0; }
+  .card-2 { top: 40px; right: 0; }
+  .card-3 { bottom: 40px; left: 2%; }
+  .card-4 { bottom: 0; right: 2%; }
+}
+
+/* Mobile (≤767px) */
+@media (max-width: 767px) {
   .navbar {
     flex-direction: column;
     gap: 16px;
-    padding: 12px;
+    padding: 16px;
+    align-items: center;
   }
   
   .navbar-nav {
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 16px;
   }
   
   .hero {
-    margin: 0;
-    padding: 60px 12px;
+    flex-direction: column;
+    padding: 40px 24px;
+    gap: 32px;
   }
 
   .hero-visual {
-    min-height: 420px;
-  }
-}
-
-@media (max-width: 600px) {
-  .hero-visual {
+    display: flex;
+    flex-direction: column; /* Normal document flow */
+    gap: 20px; /* Vertical spacing */
     min-height: auto;
+    width: 100%;
+    margin-top: 16px;
   }
 
   .hero-card {
-    position: static;
-    width: 100%;
-    margin-bottom: 16px;
+    position: static; /* Remove absolute positioning */
+    width: 100%; /* Full width */
+    transform: none;
+    margin: 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  }
+  
+  /* Reset specific positions */
+  .card-1, .card-2, .card-3, .card-4 {
+    top: auto; left: auto; right: auto; bottom: auto;
   }
 }

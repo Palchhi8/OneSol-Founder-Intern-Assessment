@@ -1,6 +1,17 @@
 import '../styles/Platforms.css'
 
-const logos = ['Northwind', 'Atlas', 'NovaLabs', 'Bluepeak', 'Helios', 'Vertex', 'Radiant', 'Pulse']
+const logos = [
+  'LinkedIn',
+  'Naukri.com',
+  'Indeed',
+  'AngelList',
+  'Instahyre',
+  'Wellfound',
+  'IIMJobs',
+  'Glassdoor',
+  'Monster India',
+  'Cutshort',
+]
 
 function Platforms() {
   return (

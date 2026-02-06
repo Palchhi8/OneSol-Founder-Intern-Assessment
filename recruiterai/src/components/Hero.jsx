@@ -2,20 +2,20 @@ import '../styles/Hero.css'
 
 const conversationCards = [
   {
-    title: 'Hiring Manager',
-    message: 'We lost two candidates last week waiting on manual feedback loops.',
+    title: 'Sarah K., Founder at TechStart',
+    message: "Candidates wait 3 weeks for replies while I'm juggling everything. We're losing great talent to competitors.",
   },
   {
-    title: 'Recruiter',
-    message: 'I spend 5+ hours daily just coordinating interview calendars.',
+    title: 'Rahul M., Hiring Manager at GrowthCo',
+    message: 'Posted on LinkedIn. Got 200 applications. Skimmed through 20. Hired on gut feeling. They quit in 2 months.',
   },
   {
-    title: 'Operations',
-    message: 'Pipeline visibility is a mess across regions and teams.',
+    title: 'Priya S., CEO at InnovateLabs',
+    message: "I'm the CEO, product lead, AND now doing HR? There's zero time to read 200 resumes properly.",
   },
   {
-    title: 'People Ops',
-    message: 'Follow-ups take weeks, so passive talent simply disappears.',
+    title: 'Amit T., Head of HR at ScaleUp',
+    message: 'Our best candidate accepted another offer while we were still scheduling interviews. This keeps happening.',
   },
 ]
 
